@@ -2,7 +2,7 @@ package mur.first.projct;
 
 public record Juicer(String color, double amount, double power, String producer, int price, String material, String brand)
 {
-    private static final String type = "Centrifugal";
+    private static final String TYPE = "Centrifugal";
 
     public Juicer()
     {
@@ -31,9 +31,9 @@ public record Juicer(String color, double amount, double power, String producer,
         return String.format("The juicer is %s, max amount of juice is %f l/h , its power is %f kW, made in %s, costs %d dollars, body material is %s and the brand of it is %s", color, amount, power, producer, price, material, brand);
     }
 
-    public static String printTypeOfTheJuicer()
+    public static String getStaticField()
     {
-        return "Type of juicer - " + type;
+        return "Type of juicer - " + TYPE;
     }
 
 }
