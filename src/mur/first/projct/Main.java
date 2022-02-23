@@ -8,7 +8,7 @@ public class Main
         Juicer xiaomi = new Juicer("pink", 1.5, 0.2);
         Juicer bosch = new Juicer("white", 1.3, 0.25, "Japan", 350, "plastic", "Bosch");
 
-        System.out.println(Juicer.printTypeOfTheJuicer());
+        System.out.println(Juicer.getStaticField());
         System.out.println(samsung);
         System.out.println(xiaomi);
         System.out.println(bosch);
